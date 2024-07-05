@@ -586,6 +586,10 @@ video {
   margin-left: 4rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -729,6 +733,14 @@ video {
 
 .bg-yosemite {
   background-image: url('../img/yosemite.jpg');
+}
+
+.bg-miami {
+  background-image: url('../img/miami.jpg');
+}
+
+.bg-bali {
+  background-image: url('../img/bali.jpg');
 }
 
 .bg-cover {
@@ -1016,8 +1028,20 @@ video {
     height: 24rem;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:w-2\/5 {
     width: 40%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:items-start {
@@ -1034,6 +1058,12 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:bg-sanFranciscoDesktop {
     background-image: url('../img/sanFranciscoDesktop.jpg');
   }
@@ -1046,7 +1076,22 @@ video {
     background-position: center;
   }
 
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 }
