@@ -20,15 +20,18 @@
         <section class="w-full h-auto">
             <div id="home">
                 <div class="w-full h-3/4">
-                    <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+                    <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-20 lg:justify-start">
                         <input type="search"
-                            class="w-48 outline-none p-3 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-10/12"
+                            class="w-48 outline-none p-3 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-10/12 lg:hidden"
                             placeholder="San Francisco" name="" id="">
+                            <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+                                <p class="text-4xl ml-16 font-bold text-black">Encuentra más ubicaciones como esta</p>
+                            </div>
                         <button
-                            class="w-48 rounded-full text-xl text-primary shadow-sm font-semibold p-4 bg-white transition duration-300 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">Explorar</button>
+                            class="w-48 rounded-full text-xl text-primary shadow-sm font-semibold p-4 bg-white transition duration-300 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16">Explorar</button>
                     </div>
-                    <div class="w-full h-full">
-                        <img src="./img/sanFrancisco.jpg" alt="San Francisco">
+                    <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                        <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="San Francisco">
                     </div>
                 </div>
             </div>
@@ -122,7 +125,7 @@
                 </li>
             </ul>
         </footer>
-        <div class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex items-center justify-around" id="tab_bar">
+        <div class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex items-center justify-around lg:hidden" id="tab_bar">
             <a href="#home">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path class="fill-current text-gray-200" stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
