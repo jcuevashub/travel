@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+    "tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+    "tw:purge": "tailwindcss -i ./src/css/tailwind.css -o ./dist/tailwind.css --minify"
   },
   "author": "Jackson Cuevas",
   "license": "ISC",
