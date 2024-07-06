@@ -759,6 +759,14 @@ video {
   background-image: url('../img/norway.jpg');
 }
 
+.bg-seattle {
+  background-image: url('../img/seattle.jpg');
+}
+
+.bg-switzerland {
+  background-image: url('../img/switzerland.jpg');
+}
+
 .bg-yosemite {
   background-image: url('../img/yosemite.jpg');
 }
@@ -972,6 +980,7 @@ video {
 .card-info-subtitle {
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
   --tw-text-opacity: 1;

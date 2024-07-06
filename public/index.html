@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../public/css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Travel</title>
 </head>
 
@@ -18,11 +19,11 @@
                 <p class="text-xl text-primary font-black dark:text-white">Platzi Travel</p>
             </div>
             <div class="flex space-x-8">
-                <a class="font-bold text-base text-primary dark:text-white" href="#home">Inicio</a>
-                <a class="font-bold text-base text-primary dark:text-white" href="#recomendados">Recomendados</a>
-                <a class="font-bold text-base text-primary dark:text-white" href="#rentas_destacadas">Rentas</a>
+                <a class="font-bold text-base text-primary dark:text-white" href="#home">Locations</a>
+                <a class="font-bold text-base text-primary dark:text-white" href="#recomendados">Stays</a>
+                <a class="font-bold text-base text-primary dark:text-white" href="#rentas_destacadas">Rents</a>
                 <a class="font-bold text-base text-primary dark:text-white" href="#faqs">FAQS</a>
-                <a class="font-bold text-base text-primary dark:text-white" href="#sobre_nosotros">Sobre nosotros</a>
+                <a class="font-bold text-base text-primary dark:text-white" href="#sobre_nosotros">About Us</a>
             </div>
             <div class="flex space-x-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -55,10 +56,12 @@
                             class="w-48 outline-none p-3 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-10/12 lg:hidden"
                             placeholder="San Francisco" name="" id="">
                         <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
-                            <p class="text-4xl ml-16 font-bold text-black dark:text-white">Encuentra más ubicaciones como esta</p>
+                            <p class="text-4xl ml-16 font-bold text-black dark:text-white">Find More Locations like this
+                            </p>
                         </div>
                         <button
-                            class="w-48 rounded-full text-xl text-primary dark:text-black shadow-sm font-semibold p-4 bg-white transition duration-300 ease-in-out hover:bg-primary dark:hover:bg-gray-700 dark:hover:text-white hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16">Explorar</button>
+                            class="w-48 rounded-full text-xl text-primary dark:text-black shadow-sm font-semibold p-4 bg-white transition duration-300 ease-in-out hover:bg-primary dark:hover:bg-gray-700 dark:hover:text-white hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16">Explore
+                            more</button>
                     </div>
                     <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
                         <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="San Francisco">
@@ -66,88 +69,103 @@
                 </div>
             </div>
             <div id="recomendados" class="p-6">
-                <p class="text-3xl font-semibold text-primary dark:text-white">Recomendados</p>
+                <p class="text-3xl font-semibold text-primary dark:text-white">Our Recomendations</p>
                 <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-contain flex space-x-6">
                     <div class="card-container">
                         <div class="card-cover bg-norway"></div>
                         <div class="card-info">
                             <p class="card-info-title">Norway</p>
-                            <p class="card-info-subtitle">Paisajes Increíbles</p>
+                            <p class="card-info-subtitle">Beautiful landscapes</p>
                         </div>
                     </div>
                     <div class="card-container">
                         <div class="card-cover bg-new_york"></div>
                         <div class="card-info">
-                            <p class="card-info-title">New Your</p>
-                            <p class="card-info-subtitle">La gran manzana</p>
+                            <p class="card-info-title">New York</p>
+                            <p class="card-info-subtitle">Concrete jungle</p>
                         </div>
                     </div>
                     <div class="card-container">
                         <div class="card-cover bg-yosemite"></div>
                         <div class="card-info">
                             <p class="card-info-title">Yosemite</p>
-                            <p class="card-info-subtitle">Una pausa del mundo</p>
+                            <p class="card-info-subtitle">A break from the world</p>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-cover bg-seattle"></div>
+                        <div class="card-info">
+                            <p class="card-info-title">Seattle</p>
+                            <p class="card-info-subtitle">Big City</p>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-cover bg-switzerland"></div>
+                        <div class="card-info">
+                            <p class="card-info-title">Switzerland</p>
+                            <p class="card-info-subtitle">Big City</p>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-cover bg-norway"></div>
+                        <div class="card-info">
+                            <p class="card-info-title">Norway</p>
+                            <p class="card-info-subtitle">Beautiful landscapes</p>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-cover bg-new_york"></div>
+                        <div class="card-info">
+                            <p class="card-info-title">New York</p>
+                            <p class="card-info-subtitle">Concrete jungle</p>
                         </div>
                     </div>
                     <div class="card-container">
                         <div class="card-cover bg-yosemite"></div>
                         <div class="card-info">
                             <p class="card-info-title">Yosemite</p>
-                            <p class="card-info-subtitle">Una pausa del mundo</p>
+                            <p class="card-info-subtitle">A break from the world</p>
                         </div>
                     </div>
                     <div class="card-container">
-                        <div class="card-cover bg-yosemite"></div>
+                        <div class="card-cover bg-seattle"></div>
                         <div class="card-info">
-                            <p class="card-info-title">Yosemite</p>
-                            <p class="card-info-subtitle">Una pausa del mundo</p>
+                            <p class="card-info-title">Seattle</p>
+                            <p class="card-info-subtitle">Big City</p>
                         </div>
                     </div>
                     <div class="card-container">
-                        <div class="card-cover bg-yosemite"></div>
+                        <div class="card-cover bg-switzerland"></div>
                         <div class="card-info">
-                            <p class="card-info-title">Yosemite</p>
-                            <p class="card-info-subtitle">Una pausa del mundo</p>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <div class="card-cover bg-yosemite"></div>
-                        <div class="card-info">
-                            <p class="card-info-title">Yosemite</p>
-                            <p class="card-info-subtitle">Una pausa del mundo</p>
-                        </div>
-                    </div>
-                    <div class="card-container">
-                        <div class="card-cover bg-yosemite"></div>
-                        <div class="card-info">
-                            <p class="card-info-title">Yosemite</p>
-                            <p class="card-info-subtitle">Una pausa del mundo</p>
+                            <p class="card-info-title">Switzerland</p>
+                            <p class="card-info-subtitle">Big City</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="px-6 w-auto lg:px-6 " id="rentas_destacadas">
-                <p class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white">Rentas destacadas</p>
+                <p class="text-3xl text-primary font-semibold pb-6 mt-2 dark:text-white">Trending Stays</p>
                 <div class="w-full h-full flex flex-col items-center justify-center">
                     <div class="w-full h-96 bg-chicago bg-cover rounded-xl mb-6 lg:bg-center">
                         <p class="card-title lg:text-black">Chicago</p>
-                        <p class="text-sm pl-8 text-black mr-24 lg:text-lg">2 habitaciones, bano y cocina</p>
+                        <p class="text-sm pl-8 text-black mr-24 lg:text-lg">2 rooms, bathroom and kitchen.</p>
                     </div>
                     <div class="lg:flex lg:h-full lg:w-full lg:space-x-4">
                         <div class="w-full h-96 bg-LA bg-cover rounded-xl mb-6 lg:h-auto">
                             <p class="card-title">Los Angeles</p>
-                            <p class="text-sm pl-8 text-white mr-24 lg:text-lg">2 habitaciones, baño y cocina</p>
+                            <p class="text-sm pl-8 text-white mr-24 lg:text-lg">4 rooms, 3 bathrooms, kitchen and
+                                private pool.</p>
                         </div>
                         <div class="h-full w-full">
                             <div class="w-full h-96 bg-miami bg-cover rounded-xl mb-6">
                                 <p class="card-title">Miami</p>
-                                <p class="text-sm pl-8 text-white mr-24 lg:text-lg">4 habitaciones, 3 baños, cocina y
-                                    piscina privada</p>
+                                <p class="text-sm pl-8 text-white mr-24 lg:text-lg">3 rooms, 2 bathrooms, kitchen and
+                                    amazing sea view.</p>
                             </div>
                             <div class="w-full h-96 bg-bali bg-cover rounded-xl mb-6">
                                 <p class="card-title">Bali</p>
-                                <p class="text-sm pl-8 text-white mr-24 lg:text-lg">2 habitaciones, baño, cocina y
-                                    piscina privada</p>
+                                <p class="text-sm pl-8 text-white mr-24 lg:text-lg">2 rooms, 2 bathrooms
+                                    Kitchen and private pool</p>
                             </div>
                         </div>
                     </div>
@@ -158,50 +176,50 @@
         <div class="w-full h-full px-6 flex-col space-y-4">
             <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQS</p>
             <div>
-                <p class="text-xl text-primary dark:text-white">Política de cancelación</p>
+                <p class="text-xl text-primary dark:text-white font-semibold">Política de cancelación</p>
                 <p class="text-md pt-2 dark:text-white">Para estancias menores a una semana es importante avisar
                     con 3 dias de
                     anticipación, de caso contratio será sancionado.</p>
             </div>
             <div>
-                <p class="text-xl text-primary dark:text-white">Método de pago</p>
-                <p class="text-md pt-2 dark:text-white">Aceptamos distintios métodos de pago: VISA, MasterCard,
-                    American
-                    Express, Paypal y Binance.</p>
+                <p class="text-xl text-primary dark:text-white font-semibold">Payment Methods</p>
+                <p class="text-md pt-2 dark:text-white">We accept VISA, MasterCard, American Express, Paypal and
+                    Binance, We accept VISA,
+                    MasterCard, American Express, Paypal and Binance.</p>
             </div>
             <div>
-                <p class="text-xl text-primary dark:text-white">Método de pago</p>
-                <p class="text-md pt-2 dark:text-white">Aceptamos distintios métodos de pago: VISA, MasterCard,
-                    American
-                    Express, Paypal y Binance.</p>
+                <p class="text-xl text-primary dark:text-white font-semibold">Payment Methods</p>
+                <p class="text-md pt-2 dark:text-white">We accept VISA, MasterCard, American Express, Paypal and
+                    Binance, We accept VISA,
+                    MasterCard, American Express, Paypal and Binance.</p>
             </div>
             <div>
-                <p class="text-xl text-primary dark:text-white">Método de pago</p>
-                <p class="text-md pt-2 dark:text-white">Aceptamos distintios métodos de pago: VISA, MasterCard,
-                    American
-                    Express, Paypal y Binance.</p>
+                <p class="text-xl text-primary dark:text-white font-semibold">Payment Methods</p>
+                <p class="text-md pt-2 dark:text-white">We accept VISA, MasterCard, American Express, Paypal and
+                    Binance, We accept VISA,
+                    MasterCard, American Express, Paypal and Binance.</p>
             </div>
         </div>
     </div>
     </section>
-    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2">
-        <h2 class="text-lg">
+    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 font-semibold ">
+        <h2 class="text-xl">
             About us
         </h2>
         <ul>
-            <li class="text-sm text-gray-300">
+            <li class="text-lg text-gray-300">
                 Investors
             </li>
-            <li class="text-sm text-gray-300">
+            <li class="text-lg text-gray-300">
                 Jobs
             </li>
-            <li class="text-sm text-gray-300">
+            <li class="text-lg text-gray-300">
                 Terms and Conditions
             </li>
-            <li class="text-sm text-gray-300">
+            <li class="text-lg text-gray-300">
                 Platsi Travel, Inc.
             </li>
-            <li class="text-sm text-gray-300">
+            <li class="text-lg text-gray-300">
                 Follow Us
                 <ul class="text-xl text-gray-300 flex space-x-2">
                     <li>

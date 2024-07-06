@@ -19,7 +19,7 @@
 }
 
 .card-info-subtitle {
-    @apply text-white px-4 text-xs
+    @apply text-white px-4 text-xs pt-2
 }
 
 .card-container:nth-child(even) .card-info {
