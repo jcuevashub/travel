@@ -2,36 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-.Card {
+.card-container {
     @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl
 }
 
-.Card--cover {
+.card-cover {
     @apply w-full h-3/5 rounded-t-lg bg-cover
 }
 
-.Card--info {
+.card-info {
     @apply w-full h-2/5 bg-secondary rounded-b-lg
 }
 
-.Card--info__title {
-    @apply text-white font-bold text-xl px-4 py-2
+.card-info-title {
+    @apply text-white font-bold text-xl px-4 pt-2
 }
 
-.Card--info__subtitle {
-    @apply text-white px-4
+.card-info-subtitle {
+    @apply text-white px-4 text-xs
 }
 
-.Card:nth-child(even) .Card--info {
-    @apply bg-white
+.card-container:nth-child(even) .card-info {
+    @apply bg-white dark:bg-gray-800
 }
-.Card:nth-child(even) .Card--info__title,
-.Card:nth-child(even) .Card--info__subtitle {
-    @apply text-tertiary
+
+.card-container:nth-child(odd) .card-info {
+    @apply dark:bg-gray-700
 }
-.Card:nth-child(odd) {
-    @apply bg-secondary text-white
+
+
+.card-container:nth-child(even) .card-info-title,
+.card-container:nth-child(even) .card-info-subtitle {
+    @apply text-tertiary dark:bg-gray-800 dark:text-white;
 }
-.CardTitle {
+
+.card-container:nth-child(odd) .card-info-title,
+.card-container:nth-child(odd) .card-info-subtitle {
+    @apply text-white dark:text-white;
+}
+
+.card-title {
     @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
 }
